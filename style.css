@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .card {
+    width: 280px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .designation {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .bio {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    background-color:green;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #0077b5; /* Change the color on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      width: 90%;
+    }
+  }
